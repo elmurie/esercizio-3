@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: $secondaryFontColor;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.btn {
+    background-color: $tertiaryFontColor;
+    padding: 15px 25px;
+    font-weight: 800;
+    font-family: $secondaryFontFamily;
+}
