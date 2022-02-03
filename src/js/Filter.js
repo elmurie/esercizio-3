@@ -9,12 +9,12 @@ export default class Filter {
 
     get MODIFIERS () {
         return {
+            headOpen : 'filterbar__head--open',
             bodyOpen : 'filterbar__body--open'
         }
     }
 
     constructor() {
-        console.log("filter found");
         this.button = document.querySelectorAll(this.SELECTORS.filterHead);
         this.content = document.querySelectorAll(this.SELECTORS.filterBody);
         this.button.forEach((item) => {
@@ -25,7 +25,9 @@ export default class Filter {
     }
 
     toggleFilter(event) {
-        const targetElement = event.target.nextElementSibling;
-        targetElement.classList.toggle(this.MODIFIERS.bodyOpen)
+        const trigger = event.target;
+        const target = event.target.nextElementSibling;
+        trigger.classList.toggle(this.MODIFIERS.headOpen)
+        target.classList.toggle(this.MODIFIERS.bodyOpen)
     }
 }
