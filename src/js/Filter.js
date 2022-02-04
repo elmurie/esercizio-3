@@ -31,3 +31,12 @@ export default class Filter {
         target.classList.toggle(this.MODIFIERS.bodyOpen)
     }
 }
+
+const labels = document.querySelectorAll(".filter_label");
+const inputs = document.querySelectorAll(".filter_input")
+labels.forEach( (label, i) => {
+    label.setAttribute("for", i);
+});
+inputs.forEach( (input, i) => {
+    input.id = i;
+});

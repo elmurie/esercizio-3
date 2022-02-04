@@ -48,20 +48,10 @@
             &:first-child {
                 width: 14%;
                 border-right: 1px solid #9d702b42;
-                ul {
-                    li:nth-child(2) {
-                        color: $tertiaryFontColor;
-                    }
-                }
             }
             &:nth-child(2) {
                 width: 28%;
                 border-right: 1px solid #9d702b42;
-                ul {
-                    li:nth-child(2) {
-                        color: $tertiaryFontColor;
-                    }
-                }
             }
             &:nth-child(3) {
                 width: 44%;
@@ -80,9 +70,14 @@
                 margin-bottom: 15px;
             }
             &__content {
-                ul {
-                    li {
-                        margin : 10px 0;
+                li {
+                    margin : 10px 0;
+                    [type="checkbox"] {
+                        display: none;
+                        &:checked + label {
+                            color: $tertiaryFontColor;
+                            font-weight: 700;
+                        }
                     }
                 }
             }

@@ -6,8 +6,10 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     row-gap : 1em;
+    column-gap: 1em;
     &__card {
         padding: 20px;
+        border: 1px solid rgba(167, 167, 167, 0.534);
         &__head {
             display: flex;
             justify-content: space-between;
