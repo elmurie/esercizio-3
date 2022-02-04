@@ -88,7 +88,7 @@
         }
         &__submit {
             margin-top: auto;
-            width: 100%;
+            width: 33%;
             background-color: $secondaryFontColor;
             .btn {
                 width: 180px;
@@ -100,7 +100,30 @@
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 1200px) {
+    .filterbar__body__filters {
+        justify-content: space-between;
+        &__col {
+            &:first-child {
+                width: 30%;
+                border-right: none;
+                padding-left: 0;
+    
+            }
+            &:nth-child(2) {
+                width: 30%;
+                border-right: none;
+                padding-left: 0;
+            }
+            &:nth-child(3) {
+                width: 30%;
+                padding-left: 0;
+    
+            }
+        }
+    }
+}
+@media screen and (max-width: 900px) {
     .filterbar {
         width : 90%;
         .filterbar__body {
@@ -118,13 +141,18 @@
                     &:first-child {
                         width: 100%;
                         border-right: none;
+                        padding-left: 0;
+
                     }
                     &:nth-child(2) {
                         width: 100%;
                         border-right: none;
+                        padding-left: 0;
                     }
                     &:nth-child(3) {
                         width: 100%;
+                        padding-left: 0;
+
                     }
                 }
             }
