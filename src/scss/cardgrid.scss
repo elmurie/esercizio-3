@@ -1,0 +1,27 @@
+.grid {
+    width: 80%;
+    margin: 50px auto 20px auto;
+    font-family: $primaryFontFamily;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap : 1em;
+    &__card {
+        width: 250px; //debug, to be changed later
+        &__head {
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        &__body {
+            .card__image {
+                img {
+                    width: 100%;
+                }
+            }
+            .card__rating {
+                display: flex;
+            }
+        }
+    }
+}

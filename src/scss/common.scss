@@ -19,4 +19,11 @@ ul {
     padding: 15px 25px;
     font-weight: 800;
     font-family: $secondaryFontFamily;
+    color: $secondaryFontColor;
+}
+
+.btn__round {
+    border-radius: 25px;
+    font-size: 12px;
+    padding: 5px 15px;
 }

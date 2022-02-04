@@ -15,11 +15,11 @@ export default class Filter {
     }
 
     constructor() {
-        this.button = document.querySelectorAll(this.SELECTORS.filterHead);
-        this.content = document.querySelectorAll(this.SELECTORS.filterBody);
-        this.button.forEach((item) => {
+        this.buttons = document.querySelectorAll(this.SELECTORS.filterHead);
+        this.contents = document.querySelectorAll(this.SELECTORS.filterBody);
+        this.buttons.forEach((item) => {
             item.addEventListener("click", (e) => {
-                this.toggleFilter(e)
+                this.toggleFilter(e);
             })
         })
     }

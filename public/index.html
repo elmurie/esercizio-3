@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico"/>
     <!--    <script>-->
@@ -38,66 +40,312 @@
     </header>
 
     <main>
-        <div class="filterbar">
-            <div class="filterbar__head" data-component="filter">
-                <div class="filterbar__head__results">45 risultati</div>
-                <div class="filterbar__head__action">
-                    <div class="filterbar__head__action__label">FILTRI</div>
-                    <div class="filterbar__head__action__funnel">
-                        <img src="./dist/filter.svg" alt="filter">
+        <section>
+            <div class="filterbar">
+                <div class="filterbar__head" data-component="filter">
+                    <div class="filterbar__head__results">45 risultati</div>
+                    <div class="filterbar__head__action">
+                        <div class="filterbar__head__action__label">FILTRI</div>
+                        <div class="filterbar__head__action__funnel">
+                            <img src="./dist/filter.svg" alt="filter">
+                        </div>
+                    </div>
+                </div>
+                <div class="filterbar__body">
+                    <div class="filterbar__body__col">
+                        <div class="filterbar__body__col__head">LABEL 1</div>
+                        <div class="filterbar__body__col__content">
+                            <ul>
+                                <li>0-2</li>
+                                <li>3-4</li>
+                                <li>5-7</li>
+                                <li>8-12</li>
+                                <li>12-14</li>
+                                <li>14+</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filterbar__body__col">
+                        <div class="filterbar__body__col__head">LABEL 2</div>
+                        <div class="filterbar__body__col__content">
+                            <ul>
+                                <li>Bunnies By The Bay</li>
+                                <li>Daron Worldwide Trading, Inc.</li>
+                                <li>FAO Schwarz</li>
+                                <li>Funko</li>
+                                <li>Hansa Toys, USA.</li>
+                                <li>Jellycat, Inc.</li>
+                                <li>Ryan's World</li>
+                                <li>Star Wars</li>
+                                <li>Steiff North America, Inc.</li>
+                                <li>Trolls</li>
+                                <li>Wonder & Wise</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filterbar__body__col">
+                        <div class="filterbar__body__col__head">LABEL 3</div>
+                        <div class="filterbar__body__col__content">
+                            <ul>
+                                <li>Valore di test</li>
+                                <li>Valore di test</li>
+                                <li>Valore di test</li>
+                                <li>Valore di test</li>
+                                <li>Valore di test</li>
+                                <li>Valore di test</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filterbar__body__col">
+                        <div class="btn"><a href="#">SUBMIT</a></div>
                     </div>
                 </div>
             </div>
-            <div class="filterbar__body">
-                <div class="filterbar__body__col">
-                    <div class="filterbar__body__col__head">LABEL 1</div>
-                    <div class="filterbar__body__col__content">
-                        <ul>
-                            <li>0-2</li>
-                            <li>3-4</li>
-                            <li>5-7</li>
-                            <li>8-12</li>
-                            <li>12-14</li>
-                            <li>14+</li>
-                        </ul>
+        </section>
+        <section>
+            <div class="grid">
+                <div class="grid__card">
+                    <div class="grid__card__head">
+                        <div class="info">Personalizzabile</div>
+                        <div class="btn btn__round">NOVITÀ</div>
+                    </div>
+                    <div class="grid__card__body">
+                        <div class="card__image">
+                            <img src="./dist/plush-fox.jpg" alt="Plush Fox">
+                        </div>
+                        <div class="card__info">
+                            <div class="card__brand">Brand</div>
+                            <div class="card__title">Nome prodotto</div>
+                            <div class="card__rating">
+                                <div class="card__rating__label">Valutazione dei clienti</div>
+                                <div class="card__rating__stars">
+                                    <img src="./dist/Star_1.svg" alt="">
+                                    <img src="./dist/Star_1.svg" alt="">
+                                    <img src="./dist/Star_1.svg" alt="">
+                                    <img src="./dist/Star_1.svg" alt="">
+                                    <img src="./dist/Star_2.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="card__price">
+                                <span class="card__price__currency">&#8364;</span>
+                                <span class="card__price__integer">00,</span>
+                                <span class="card__price__decimal">00</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="filterbar__body__col">
-                    <div class="filterbar__body__col__head">LABEL 2</div>
-                    <div class="filterbar__body__col__content">
-                        <ul>
-                            <li>Bunnies By The Bay</li>
-                            <li>Daron Worldwide Trading, Inc.</li>
-                            <li>FAO Schwarz</li>
-                            <li>Funko</li>
-                            <li>Hansa Toys, USA.</li>
-                            <li>Jellycat, Inc.</li>
-                            <li>Ryan's World</li>
-                            <li>Star Wars</li>
-                            <li>Steiff North America, Inc.</li>
-                            <li>Trolls</li>
-                            <li>Wonder & Wise</li>
-                        </ul>
+                <div class="grid__card">
+                    <div class="grid__card__head">
+                        <div class="info">Personalizzabile</div>
+                        <div class="btn btn__round">NOVITÀ</div>
+                    </div>
+                    <div class="grid__card__body">
+                        <div class="card__image">
+                            <img src="./dist/plush-fox.jpg" alt="Plush Fox">
+                        </div>
+                        <div class="card__info">
+                            <div class="card__brand">Brand</div>
+                            <div class="card__title">Nome prodotto</div>
+                            <div class="card__rating">
+                                <div class="card__rating__label">Valutazione dei clienti</div>
+                                <div class="card__rating__stars">
+                                    <img src="./dist/Star_1.svg" alt="">
+                                    <img src="./dist/Star_1.svg" alt="">
+                                    <img src="./dist/Star_1.svg" alt="">
+                                    <img src="./dist/Star_1.svg" alt="">
+                                    <img src="./dist/Star_2.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="card__price">
+                                <span class="card__price__currency">&#8364;</span>
+                                <span class="card__price__integer">00,</span>
+                                <span class="card__price__decimal">00</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="filterbar__body__col">
-                    <div class="filterbar__body__col__head">LABEL 3</div>
-                    <div class="filterbar__body__col__content">
-                        <ul>
-                            <li>Valore di test</li>
-                            <li>Valore di test</li>
-                            <li>Valore di test</li>
-                            <li>Valore di test</li>
-                            <li>Valore di test</li>
-                            <li>Valore di test</li>
-                        </ul>
+                <div class="grid__card">
+                    <div class="grid__card__head">
+                        <div class="info">Personalizzabile</div>
+                        <div class="btn btn__round">NOVITÀ</div>
+                    </div>
+                    <div class="grid__card__body">
+                        <div class="card__image">
+                            <img src="./dist/plush-fox.jpg" alt="Plush Fox">
+                        </div>
+                        <div class="card__info">
+                            <div class="card__brand">Brand</div>
+                            <div class="card__title">Nome prodotto</div>
+                            <div class="card__rating">
+                                <div class="card__rating__label">Valutazione dei clienti</div>
+                                <div class="card__rating__stars">
+                                    <img src="./dist/Star_1.svg" alt="">
+                                    <img src="./dist/Star_1.svg" alt="">
+                                    <img src="./dist/Star_1.svg" alt="">
+                                    <img src="./dist/Star_1.svg" alt="">
+                                    <img src="./dist/Star_2.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="card__price">
+                                <span class="card__price__currency">&#8364;</span>
+                                <span class="card__price__integer">00,</span>
+                                <span class="card__price__decimal">00</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="filterbar__body__col">
-                    <div class="btn"><a href="#">SUBMIT</a></div>
+                <div class="grid__card">
+                    <div class="grid__card__head">
+                        <div class="info">Personalizzabile</div>
+                        <div class="btn btn__round">NOVITÀ</div>
+                    </div>
+                    <div class="grid__card__body">
+                        <div class="card__image">
+                            <img src="./dist/plush-fox.jpg" alt="Plush Fox">
+                        </div>
+                        <div class="card__info">
+                            <div class="card__brand">Brand</div>
+                            <div class="card__title">Nome prodotto</div>
+                            <div class="card__rating">
+                                <div class="card__rating__label">Valutazione dei clienti</div>
+                                <div class="card__rating__stars">
+                                    <img src="./dist/Star_1.svg" alt="">
+                                    <img src="./dist/Star_1.svg" alt="">
+                                    <img src="./dist/Star_1.svg" alt="">
+                                    <img src="./dist/Star_1.svg" alt="">
+                                    <img src="./dist/Star_2.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="card__price">
+                                <span class="card__price__currency">&#8364;</span>
+                                <span class="card__price__integer">00,</span>
+                                <span class="card__price__decimal">00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__card">
+                    <div class="grid__card__head">
+                        <div class="info">Personalizzabile</div>
+                        <div class="btn btn__round">NOVITÀ</div>
+                    </div>
+                    <div class="grid__card__body">
+                        <div class="card__image">
+                            <img src="./dist/plush-fox.jpg" alt="Plush Fox">
+                        </div>
+                        <div class="card__info">
+                            <div class="card__brand">Brand</div>
+                            <div class="card__title">Nome prodotto</div>
+                            <div class="card__rating">
+                                <div class="card__rating__label">Valutazione dei clienti</div>
+                                <div class="card__rating__stars">
+                                    <img src="./dist/Star_1.svg" alt="">
+                                    <img src="./dist/Star_1.svg" alt="">
+                                    <img src="./dist/Star_1.svg" alt="">
+                                    <img src="./dist/Star_1.svg" alt="">
+                                    <img src="./dist/Star_2.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="card__price">
+                                <span class="card__price__currency">&#8364;</span>
+                                <span class="card__price__integer">00,</span>
+                                <span class="card__price__decimal">00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__card">
+                    <div class="grid__card__head">
+                        <div class="info">Personalizzabile</div>
+                        <div class="btn btn__round">NOVITÀ</div>
+                    </div>
+                    <div class="grid__card__body">
+                        <div class="card__image">
+                            <img src="./dist/plush-fox.jpg" alt="Plush Fox">
+                        </div>
+                        <div class="card__info">
+                            <div class="card__brand">Brand</div>
+                            <div class="card__title">Nome prodotto</div>
+                            <div class="card__rating">
+                                <div class="card__rating__label">Valutazione dei clienti</div>
+                                <div class="card__rating__stars">
+                                    <img src="./dist/Star_1.svg" alt="">
+                                    <img src="./dist/Star_1.svg" alt="">
+                                    <img src="./dist/Star_1.svg" alt="">
+                                    <img src="./dist/Star_1.svg" alt="">
+                                    <img src="./dist/Star_2.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="card__price">
+                                <span class="card__price__currency">&#8364;</span>
+                                <span class="card__price__integer">00,</span>
+                                <span class="card__price__decimal">00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__card">
+                    <div class="grid__card__head">
+                        <div class="info">Personalizzabile</div>
+                        <div class="btn btn__round">NOVITÀ</div>
+                    </div>
+                    <div class="grid__card__body">
+                        <div class="card__image">
+                            <img src="./dist/plush-fox.jpg" alt="Plush Fox">
+                        </div>
+                        <div class="card__info">
+                            <div class="card__brand">Brand</div>
+                            <div class="card__title">Nome prodotto</div>
+                            <div class="card__rating">
+                                <div class="card__rating__label">Valutazione dei clienti</div>
+                                <div class="card__rating__stars">
+                                    <img src="./dist/Star_1.svg" alt="">
+                                    <img src="./dist/Star_1.svg" alt="">
+                                    <img src="./dist/Star_1.svg" alt="">
+                                    <img src="./dist/Star_1.svg" alt="">
+                                    <img src="./dist/Star_2.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="card__price">
+                                <span class="card__price__currency">&#8364;</span>
+                                <span class="card__price__integer">00,</span>
+                                <span class="card__price__decimal">00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__card">
+                    <div class="grid__card__head">
+                        <div class="info">Personalizzabile</div>
+                        <div class="btn btn__round">NOVITÀ</div>
+                    </div>
+                    <div class="grid__card__body">
+                        <div class="card__image">
+                            <img src="./dist/plush-fox.jpg" alt="Plush Fox">
+                        </div>
+                        <div class="card__info">
+                            <div class="card__brand">Brand</div>
+                            <div class="card__title">Nome prodotto</div>
+                            <div class="card__rating">
+                                <div class="card__rating__label">Valutazione dei clienti</div>
+                                <div class="card__rating__stars">
+                                    <img src="./dist/Star_1.svg" alt="">
+                                    <img src="./dist/Star_1.svg" alt="">
+                                    <img src="./dist/Star_1.svg" alt="">
+                                    <img src="./dist/Star_1.svg" alt="">
+                                    <img src="./dist/Star_2.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="card__price">
+                                <span class="card__price__currency">&#8364;</span>
+                                <span class="card__price__integer">00,</span>
+                                <span class="card__price__decimal">00</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 </body>
 </html>
