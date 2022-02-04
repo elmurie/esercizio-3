@@ -22,8 +22,15 @@
         }
         &__body {
             .card__image {
+                margin-top: 20px;
+                width: 100%;
                 img {
                     width: 100%;
+                }
+                .heart {
+                    width: 30px;
+                    margin-left: auto;
+                    display: block;
                 }
             }
             .card__info {
