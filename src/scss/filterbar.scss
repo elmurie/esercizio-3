@@ -2,6 +2,7 @@
     width: 80%;
     margin: 50px auto 20px auto;
     font-family: $primaryFontFamily;
+    position: relative;
     &__head {
         display: flex;
         justify-content: space-between;
@@ -29,10 +30,15 @@
         }
     }
     &__body {
+        width: 100%;
         display: none;
         padding: 20px;
         margin: 0 0 10px 0;
         box-shadow: -1px 4px 10px -3px rgb(189, 189, 189);
+        position: absolute;
+        top : 100%;
+        left: 0;
+        background-color: $secondaryFontColor ;
         &--open {
             display: flex;
         }
