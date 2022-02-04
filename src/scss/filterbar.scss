@@ -3,6 +3,9 @@
     margin: 50px auto 20px auto;
     font-family: $primaryFontFamily;
     position: relative;
+    &:hover {
+        cursor: pointer;
+    }
     &__head {
         display: flex;
         justify-content: space-between;
