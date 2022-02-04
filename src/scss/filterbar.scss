@@ -35,56 +35,105 @@
         padding: 20px;
         margin: 0 0 10px 0;
         box-shadow: -1px 4px 10px -3px rgb(189, 189, 189);
+        background-color: $secondaryFontColor ;
         position: absolute;
         top : 100%;
         left: 0;
-        background-color: $secondaryFontColor ;
         &--open {
             display: flex;
         }
-        &__col {
-            padding: 0 20px;
-            font-weight: 800;
-            &:first-child {
-                width: 14%;
-                border-right: 1px solid #9d702b42;
-            }
-            &:nth-child(2) {
-                width: 28%;
-                border-right: 1px solid #9d702b42;
-            }
-            &:nth-child(3) {
-                width: 44%;
-            }
-            &:nth-child(4) {
-                margin-top: auto;
-                width: 14%;
-                .btn {
-                    text-align: center;
-                }
-            }
-            &__head {
-                font-family: $secondaryFontFamily;
-                color: $tertiaryFontColor;
+        &__filters {
+            width: 100%;
+            display: flex;
+            &__col {
+                padding: 0 20px;
                 font-weight: 800;
-                margin-bottom: 15px;
-            }
-            &__content {
-                li {
-                    margin : 10px 0;
-                    [type="checkbox"] {
-                        display: none;
-                        &:checked + label {
-                            color: $tertiaryFontColor;
-                            font-weight: 700;
+                &:first-child {
+                    width: 14%;
+                    border-right: 1px solid #9d702b42;
+                }
+                &:nth-child(2) {
+                    width: 28%;
+                    border-right: 1px solid #9d702b42;
+                }
+                &:nth-child(3) {
+                    width: 44%;
+                }
+                &__head {
+                    font-family: $secondaryFontFamily;
+                    color: $tertiaryFontColor;
+                    font-weight: 800;
+                    margin-bottom: 15px;
+                }
+                &__content {
+                    li {
+                        margin : 10px 0;
+                        [type="checkbox"] {
+                            display: none;
+                            &:checked + label {
+                                color: $tertiaryFontColor;
+                                font-weight: 700;
+                            }
                         }
-                    }
-                    .filter_label:hover {
-                        cursor: pointer;
+                        .filter_label:hover {
+                            cursor: pointer;
+                        }
                     }
                 }
             }
         }
+        &__submit {
+            margin-top: auto;
+            width: 100%;
+            background-color: $secondaryFontColor;
+            .btn {
+                width: 180px;
+                text-align: center;
+            }
+        }
         
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .filterbar {
+        width : 90%;
+        .filterbar__body {
+            flex-direction: column;
+            height: 500px;
+            &__filters {
+                flex-direction: column;
+                overflow-y: scroll;
+                &__col {
+                    width: 100%;
+                    border: none;
+                    &__head {
+                        margin: 20px 0;
+                    }
+                    &:first-child {
+                        width: 100%;
+                        border-right: none;
+                    }
+                    &:nth-child(2) {
+                        width: 100%;
+                        border-right: none;
+                    }
+                    &:nth-child(3) {
+                        width: 100%;
+                    }
+                }
+            }
+            &__submit {
+                margin-top: auto;
+                width: 100%;
+                .btn {
+                    width: 160px;
+                    display: block;
+                    margin-left: auto;
+                    text-align: center;
+                    
+                }
+            }
+        }
     }
 }
