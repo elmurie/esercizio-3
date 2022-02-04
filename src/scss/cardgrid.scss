@@ -8,8 +8,10 @@
     row-gap : 1em;
     column-gap: 1em;
     &__card {
+        position: relative;
         padding: 20px;
         border: 1px solid rgba(167, 167, 167, 0.534);
+        transition: .5s;
         &__head {
             display: flex;
             justify-content: space-between;
@@ -72,7 +74,11 @@
             }
         }
         &__appendix {
+            width: 100%;
             display: none;
+            padding: 0 20px 20px 20px;
+            background-color: $secondaryFontColor;
+            z-index: 1;
             .product-description {
                 margin: 20px 0;
                 font-family: $primaryFontFamily;
@@ -80,8 +86,14 @@
             }
         }
         &:hover {
+            border: none;
+            box-shadow: -1px 11px 10px -3px rgb(189, 189, 189);
             & .grid__card__appendix {
                 display: block;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                box-shadow: -1px 7px 10px -3px rgb(189, 189, 189);
             }
         }
     }
