@@ -71,6 +71,19 @@
                 }
             }
         }
+        &__appendix {
+            display: none;
+            .product-description {
+                margin: 20px 0;
+                font-family: $primaryFontFamily;
+                font-weight: 700;
+            }
+        }
+        &:hover {
+            & .grid__card__appendix {
+                display: block;
+            }
+        }
     }
 }
 
@@ -93,6 +106,9 @@
         overflow-x: hidden;
         &__card {
             width: 100%;
+        }
+        .card__rating__stars img{
+            width: 20px;
         }
     }
 }
