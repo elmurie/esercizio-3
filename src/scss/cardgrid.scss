@@ -7,11 +7,16 @@
     grid-template-rows: repeat(2, 1fr);
     row-gap : 1em;
     &__card {
-        width: 250px; //debug, to be changed later
+        padding: 20px;
         &__head {
             display: flex;
             justify-content: space-between;
-            
+            .info {
+                font-size: 15px;
+                font-weight: 700;
+                letter-spacing: 1px;
+                color: $tertiaryFontColor;
+            }
         }
         &__body {
             .card__image {
@@ -19,8 +24,36 @@
                     width: 100%;
                 }
             }
-            .card__rating {
-                display: flex;
+            .card__info {
+                .card__brand,
+                .card__rating__label {
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+                .card__title {
+                    font-size: 16px;
+                    font-weight: 800;
+                    font-family: $secondaryFontFamily;
+                }
+                .card__rating {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 20px;
+                    
+                }
+                .card__price {
+                    &__currency {
+                        font-family: $tertiaryFontFamily;
+                    }
+                    &__integer {
+                        font-size: 30px;
+                        font-weight: 800;
+                        font-family: $secondaryFontFamily;
+                    }
+                    &__decimal {
+                        font-weight: 800;
+                    }
+                }
             }
         }
     }
