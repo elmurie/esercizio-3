@@ -3,7 +3,7 @@ import Filter from './Filter.js';
 
 const filters = document.querySelectorAll(['[data-component="filter"]']);
 filters.forEach( filter => {
-    return new Filter();
+    return new Filter(filter);
 })
 
 // import { node } from 'webpack'

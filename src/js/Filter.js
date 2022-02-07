@@ -14,21 +14,18 @@ export default class Filter {
         }
     }
 
-    constructor() {
-        this.buttons = document.querySelectorAll(this.SELECTORS.filterHead);
-        this.contents = document.querySelectorAll(this.SELECTORS.filterBody);
-        this.buttons.forEach((item) => {
-            item.addEventListener("click", (e) => {
+    constructor(nodeElement) {
+        this.wrapper = nodeElement;
+        this.buttons = this.wrapper.querySelector(this.SELECTORS.filterHead);
+        this.contents = this.wrapper.querySelector(this.SELECTORS.filterBody);
+        this.buttons.addEventListener("click", (e) => {
                 this.toggleFilter(e);
             })
-        })
     }
 
     toggleFilter(event) {
-        const trigger = event.target;
-        const target = event.target.nextElementSibling;
-        trigger.classList.toggle(this.MODIFIERS.headOpen)
-        target.classList.toggle(this.MODIFIERS.bodyOpen)
+        this.buttons.classList.toggle(this.MODIFIERS.headOpen)
+        this.contents.classList.toggle(this.MODIFIERS.bodyOpen)
     }
 }
 
