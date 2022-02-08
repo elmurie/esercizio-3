@@ -11,7 +11,7 @@ export default class Stars {
         };
     }
 
-    constructor(wrapperElement) {
+    constructor() {
 
     }
 }
