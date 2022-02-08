@@ -9,8 +9,13 @@ filters.forEach( filter => {
 
 const likes = document.querySelectorAll(['[data-component="like"]']);
 likes.forEach( like => {
-    console.log(like);
     return new Like(like);
+})
+
+const stars = document.querySelectorAll(['[data-component="rate"]']);
+stars.forEach( star => {
+    console.log(star);
+    return new Stars(star);
 })
 
 // import { node } from 'webpack'
