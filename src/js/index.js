@@ -1,9 +1,16 @@
 import '@scssFolder/'
 import Filter from './Filter.js';
+import Like from './Like.js';
 
 const filters = document.querySelectorAll(['[data-component="filter"]']);
 filters.forEach( filter => {
     return new Filter(filter);
+})
+
+const likes = document.querySelectorAll(['[data-component="like"]']);
+likes.forEach( like => {
+    console.log(like);
+    return new Like(like);
 })
 
 // import { node } from 'webpack'
