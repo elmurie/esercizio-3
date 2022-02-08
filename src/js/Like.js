@@ -1,13 +1,12 @@
 export default class Like {
     get MODIFIERS() {
         return {
-            clicked : 'heart--liked'
+            clicked : 'heart--liked' // no css written for this class yet
         }
     }
 
     constructor(heart) {
         heart.addEventListener("click", (btn) => {
-            // btn.preventDefault();
             heart.classList.toggle(this.MODIFIERS.clicked);
         })
     }
